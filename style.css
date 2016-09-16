@@ -1,0 +1,46 @@
+#top {
+	height: 200px;
+	padding-top: 65px;
+	margin-left: 425px;
+	margin-right: 250px;
+	padding: 15px;
+	text-align: center;
+	padding-top: 80px;
+	color: aliceblue;
+	display: inline-block;
+	padding-left: 
+}
+
+/*
+.center {
+	text-align: center;
+}
+*/
+
+body {
+	background: url(provo.jpeg) no-repeat center center fixed;
+	position: fixed;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+
+#box {
+	background-color: rgba(5, 4, 2, 0.5);
+	width: 750px;
+	height: 400px;
+	margin-left: 250px;
+	margin-right: 250px;
+	padding: 15px;
+	text-align: center;
+	padding-top: 80px;
+	color: aliceblue;
+	display: inline-block;
+}
+
+.form-control {
+	display: inline-block;
+	width: 200px;
+	align-content: center;
+	padding-left: 300px;
+	text-align: center;
+}

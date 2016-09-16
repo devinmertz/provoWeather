@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Provo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainController">
+	<div class="container">
+	<div class="row">
+	<div class="col-xs-4"></div>
+		<div id="top" class="col-xs-4"><h1>Provo, UT</h1></div>
+		<div class="col-xs-4"></div>
+	</div>
+		<div class="row">
+			<div class="col-xs-4"></div>
+			<div id="box" class="col-xs-4">
+				<h1> {{weatherData.currently.temperature | temp:scale }}</h1>
+				<label for="tempSelect">Current Temperature</label>
+				<br>
+				<select class="form-control" ng-change="" name="" id="tempSelect" ng-model="scale" ng-options="scale as scale.name for scale in degreeScales">
+					<option value="">Select Scale</option>
+				</select>
+			</div>
+			<div class="col-xs-4"></div>
+		</div>
+		<div class="row">
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="app.js"></script>
+	<script src="httpService.js"></script>
+	<script src="tempFilter.js"></script>
+</body>
+
+</html>
